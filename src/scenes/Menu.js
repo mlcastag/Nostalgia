@@ -8,7 +8,8 @@ class Menu extends Phaser.Scene{
         this.load.path = './assets/'
 
         this.load.bitmapFont('highSchool', 'Highschool Nostalgia.png', 'Highschool Nostalgia.xml')
-    
+        this.load.image('tiles', 'tileset.png')
+        this.load.tilemapTiledJSON('concert', 'concert.json')
 
     }
 
@@ -28,15 +29,15 @@ class Menu extends Phaser.Scene{
     }
 
     update(){
-        /*
+        
         if(Phaser.Input.Keyboard.JustDown(this.keySTART)){
-            this.scene('')
+            this.scene.start('playScene')
         }
-            */
+            
         
         /*
         if(Phaser.Input.Keyboard.JustDown(this.keyCREDITS)){
-            this.scene('')
+            this.scene.start('')
         }
             */
     }

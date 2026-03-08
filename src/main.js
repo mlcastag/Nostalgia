@@ -1,4 +1,5 @@
 // Matt Castagna
+// Font: https://www.dafont.com/highschool-nostalgia.font
 
 'use strict'
 
@@ -18,7 +19,7 @@ let config = {
             debug: false,
         }
     },
-    scene: [ Menu ]
+    scene: [ Menu, Play ]
 }
 
 let game = new Phaser.Game(config)
