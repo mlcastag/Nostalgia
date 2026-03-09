@@ -4,11 +4,13 @@ class Letter extends Phaser.Scene{
     }
 
     create(){
-        this.pictureOne = this.add.image(0, 0, 'pictureOne').setOrigin(0, 0).setScale(.7)
+        
+        this.pictureOne = this.add.image(0, this.scale.height, 'pictureOne').setOrigin(0, 0).setScale(.7)
     }
 
     update(){
 
+        this.pictureOne.y -= 1
     }
 
 

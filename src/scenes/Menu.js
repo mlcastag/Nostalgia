@@ -17,6 +17,7 @@ class Menu extends Phaser.Scene{
             frameHeight: 64
         })
 
+        this.load.audio('postcards', 'postcardsFromHell.wav')
 
     }
 
@@ -29,10 +30,17 @@ class Menu extends Phaser.Scene{
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.5, 'highSchool', 'Press \'SPACE\' to start', 32).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.2, 'highSchool', 'Press \'C\' for credits', 32).setOrigin(0.5)
     
+        this.backgroundMusic = this.sound.add('postcards', {
+            volume: 0.1,
+            loop: true
+        })
+        this.backgroundMusic.play()
+
         this.keyINTERACT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E)
         this.keyCREDITS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.C)
         this.keySTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
     
+
     }
 
     update(){

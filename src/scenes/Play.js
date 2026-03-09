@@ -21,6 +21,8 @@ class Play extends Phaser.Scene{
         this.player.body.setOffset(0, this.player.height - 48)
         this.player.body.setCollideWorldBounds(true)
         
+        
+
         // Collision
         this.objectLayer.setCollisionByProperty({collides: true})
         this.physics.add.collider(this.player, this.objectLayer)
@@ -78,9 +80,9 @@ class Play extends Phaser.Scene{
                 this.interactions(tile.properties.interact)
             }
 
-    }else{
-        this.interactPrompt.setVisible(false)
-    }
+        }else{
+            this.interactPrompt.setVisible(false)
+        }
 }
 
     interactions(prompt){
