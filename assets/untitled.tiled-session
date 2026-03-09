@@ -11,7 +11,7 @@
     "fileStates": {
         "": {
             "scaleInDock": 0.125,
-            "scaleInEditor": 1
+            "scaleInEditor": 0.5
         },
         "C:/Tiled Stuff/Concert.tsx": {
             "dynamicWrapping": true,
@@ -38,7 +38,7 @@
             "selectedLayer": 1,
             "viewCenter": {
                 "x": 335,
-                "y": 355
+                "y": 216
             }
         },
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx#Modern_Exteriors_Complete_Tileset_32x32": {
@@ -46,7 +46,7 @@
             "scaleInEditor": 1
         },
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx#tileset": {
-            "scaleInDock": 0.75
+            "scaleInDock": 0.33
         },
         "C:/Users/mckst/Desktop/concert.tmx": {
             "scale": 1.0027777777777778,
@@ -96,8 +96,8 @@
     "project": "untitled.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "C:/Users/mckst/Desktop/CMPM-120/CP-Slime-World-master-main/assets/overworld.tmx",
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx",
+        "C:/Users/mckst/Desktop/CMPM-120/CP-Slime-World-master-main/assets/overworld.tmx",
         "C:/Users/mckst/Desktop/Tiled Stuff/Concert.tsx",
         "concert.tmx",
         "C:/Users/mckst/Desktop/concert.tmx",
