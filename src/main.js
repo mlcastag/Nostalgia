@@ -1,7 +1,7 @@
 // Matt Castagna
 // Font: https://www.dafont.com/highschool-nostalgia.font
-
-'use strict'
+// Music: The Wood Brothers (can send email permission if needed)
+// Other: Help with getting interactions to work in a non buggy way https://pablo.gg/en/blog/coding/how-to-create-a-top-down-rpg-maker-like-game-with-phaser-js-and-react/
 
 let config = {
     parent: 'myGame',

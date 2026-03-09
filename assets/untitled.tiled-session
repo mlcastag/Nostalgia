@@ -11,7 +11,7 @@
     "fileStates": {
         "": {
             "scaleInDock": 0.125,
-            "scaleInEditor": 0.5
+            "scaleInEditor": 0.33
         },
         "C:/Tiled Stuff/Concert.tsx": {
             "dynamicWrapping": true,
@@ -37,8 +37,8 @@
             "scale": 1,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 335,
-                "y": 216
+                "x": 401,
+                "y": 299
             }
         },
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx#Modern_Exteriors_Complete_Tileset_32x32": {
@@ -46,7 +46,7 @@
             "scaleInEditor": 1
         },
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx#tileset": {
-            "scaleInDock": 0.33
+            "scaleInDock": 0.5
         },
         "C:/Users/mckst/Desktop/concert.tmx": {
             "scale": 1.0027777777777778,
