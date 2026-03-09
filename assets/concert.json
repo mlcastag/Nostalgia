@@ -238,6 +238,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -247,6 +252,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -256,6 +266,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -265,6 +280,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -274,6 +294,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -283,6 +308,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -292,6 +322,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -301,6 +336,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -310,6 +350,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 },
             
@@ -320,6 +365,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -329,6 +379,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -338,6 +393,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -347,6 +407,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -356,6 +421,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -365,6 +435,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -374,6 +449,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -383,6 +463,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -392,6 +477,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -401,6 +491,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -410,6 +505,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -419,6 +519,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -428,6 +533,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -437,6 +547,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -446,6 +561,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -455,6 +575,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -464,6 +589,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -473,6 +603,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -482,6 +617,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -491,6 +631,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -500,6 +645,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -509,6 +659,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -518,6 +673,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -527,6 +687,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -536,6 +701,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 },
             
@@ -546,6 +716,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -555,6 +730,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -564,6 +744,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -573,6 +758,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {
@@ -582,6 +772,11 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"interact",
+                         "type":"string",
+                         "value":"Food Truck"
                         }]
                 }, 
                 {

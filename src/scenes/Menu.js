@@ -7,6 +7,7 @@ class Menu extends Phaser.Scene{
         
         this.load.path = './assets/'
 
+        this.load.image('pictureOne', 'pictureOne.jpg')
         this.load.bitmapFont('highSchool', 'Highschool Nostalgia.png', 'Highschool Nostalgia.xml')
         this.load.image('tiles', 'tileset.png')
         this.load.tilemapTiledJSON('concert', 'concert.json')
