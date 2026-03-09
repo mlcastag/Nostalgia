@@ -14,7 +14,9 @@ class Play extends Phaser.Scene{
         const floorLayer = map.createLayer('floorLayer', tileset, 0 , 0)
         const objectLayer = map.createLayer('objectLayer', tileset, 0 , 0)
         
-
+        this.player = this.physics.add.sprite(705, 550, 'player', 3)
+        this.player.body.setCollideWorldBounds(true)
+        
     }
 
     update(){

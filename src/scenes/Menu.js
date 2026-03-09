@@ -11,6 +11,12 @@ class Menu extends Phaser.Scene{
         this.load.image('tiles', 'tileset.png')
         this.load.tilemapTiledJSON('concert', 'concert.json')
 
+        this.load.spritesheet('player', 'player.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+
+
     }
 
     create(){
