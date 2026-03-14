@@ -4,15 +4,39 @@ class Menu extends Phaser.Scene{
     }
 
     preload(){
+
+        // Loading bar
+        let loading = this.add.graphics()
+        this.load.on('progress', (value) => {
+            loading.clear()
+            loading.fillStyle(0xFFFFFF, 1)
+            loading.fillRect(this.scale.width * .1, this.scale.height * .5, this.scale.width * .8 * value, 15)
+        })
+        this.load.on('complete', () => {
+            loading.destroy()
+        })
         
+        // Load
         this.load.path = './assets/'
 
+        this.load.image('creditsPhoto', 'creditsPhoto.jpg')
         this.load.image('tempBox', 'tempBox.png')
         this.load.image('pictureOne', 'pictureOne.jpg')
         this.load.bitmapFont('highSchool', 'Highschool Nostalgia.png', 'Highschool Nostalgia.xml')
         this.load.image('tiles', 'tileset.png')
         this.load.tilemapTiledJSON('concert', 'concert.json')
-
+        this.load.spritesheet('singer', 'singer.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('guitar', 'guitar.png', {
+            frameWidth: 64,
+            frameHeight: 64
+        })
+        this.load.spritesheet('drum', 'drum.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
         this.load.spritesheet('player', 'player.png', {
             frameWidth: 32,
             frameHeight: 64
@@ -30,16 +54,22 @@ class Menu extends Phaser.Scene{
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.8, 'highSchool', 'Press \'E\' to interact', 32).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.5, 'highSchool', 'Press \'SPACE\' to start', 32).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.2, 'highSchool', 'Press \'C\' for credits', 32).setOrigin(0.5)
+        this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.1, 'highSchool', 'Press \'R\' to restart to menu', 32).setOrigin(0.5)
+
     
-        this.backgroundMusic = this.sound.add('postcards', {
+    
+        if(!backgroundMusic){
+            backgroundMusic = this.sound.add('postcards', {
             volume: 0.1,
             loop: true
         })
-        this.backgroundMusic.play()
+            backgroundMusic.play()
+        }
 
         this.keyINTERACT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E)
         this.keyCREDITS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.C)
         this.keySTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
+        this.keyRESTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R)
     
 
     }
@@ -50,12 +80,16 @@ class Menu extends Phaser.Scene{
             this.scene.start('playScene')
         }
             
-        
-        /*
         if(Phaser.Input.Keyboard.JustDown(this.keyCREDITS)){
-            this.scene.start('')
+            this.scene.start('creditsScene')
         }
-            */
+
+        if(Phaser.Input.Keyboard.JustDown(this.keyRESTART)){
+            this.scene.start('menuScene')
+            backgroundMusic.stop()
+            backgroundMusic.play()
+        }
+            
     }
 
 }

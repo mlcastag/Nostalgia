@@ -1,7 +1,10 @@
 // Matt Castagna
+// Asset Packs: By LimeZu https://limezu.itch.io/modernexteriors, https://limezu.itch.io/moderninteriors
 // Font: https://www.dafont.com/highschool-nostalgia.font
 // Music: The Wood Brothers (can send email permission if needed)
 // Other: Help with getting interactions to work in a non buggy way https://pablo.gg/en/blog/coding/how-to-create-a-top-down-rpg-maker-like-game-with-phaser-js-and-react/
+// Phaser major components: Physics/Collision, Tilemaps, Dialogue, Animations, Interactables, Player Movement
+// There are personal photos of me and my friend and I would ask that you do not share them. 
 
 let config = {
     parent: 'myGame',
@@ -19,7 +22,8 @@ let config = {
             debug: true,
         }
     },
-    scene: [ Menu, Play, Letter ]
+    scene: [ Menu, Credits, Play, Letter ]
 }
 
 let game = new Phaser.Game(config)
+let backgroundMusic
