@@ -1,49 +1,19 @@
-class Play extends Phaser.Scene{
+class PlayTwo extends Phaser.Scene{
     constructor(){
-        super('playScene')
+        super('playTwoScene')
     }
 
     init(){
-        this.foodTrucks = 0
-        this.stage = 0
-        this.sweetTea = 0
+
     }
 
     create(){
 
         // Add map
-        const map = this.add.tilemap('concert')
-        const tileset = map.addTilesetImage('tileset','tiles')
-        const floorLayer = map.createLayer('floorLayer', tileset, 0 , 0)
-        this.objectLayer = map.createLayer('objectLayer', tileset, 0 , 0)
-        
-        // Add band
-        this.singer = this.add.sprite(this.scale.width / 2, this.scale.height / 2.3, 'singer')
-        this.drummer = this.add.sprite(this.scale.width / 2.6, this.scale.height / 2.4, 'drum')
-        this.guitar = this.add.sprite(this.scale.width / 1.6, this.scale.height / 2.4, 'guitar')
-
-        // Band Animations
-        this.anims.create({
-            key: 'singerAnim',
-            frameRate: 8,
-            repeat: -1,
-            frames: this.anims.generateFrameNumbers('singer', {start: 0, end: 5})
-        })
-        this.singer.play('singerAnim')
-        this.anims.create({
-            key: 'drumAnim',
-            frameRate: 8,
-            repeat: -1,
-            frames: this.anims.generateFrameNumbers('drum', {start: 0, end: 11})
-        })
-        this.drummer.play('drumAnim')
-        this.anims.create({
-            key: 'guitarAnim',
-            frameRate: 8,
-            repeat: -1,
-            frames: this.anims.generateFrameNumbers('guitar', {start: 0, end: 11})
-        })
-        this.guitar.play('guitarAnim')
+        const map = this.add.tilemap('bigSur')
+        const tileset = map.addTilesetImage('tileset', 'tiles')
+        const floorLayer = map.createLayer('floorLayer', tileset, 0, 0)
+        this.objectLayer = map.createLayer('objectLayer', tileset, 0, 0)
 
         // Keys
         this.cursors = this.input.keyboard.createCursorKeys()
@@ -51,21 +21,9 @@ class Play extends Phaser.Scene{
         this.keySTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
         this.keyRESTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R)
 
-        // Add NPC's
-        this.phoneGuy = this.physics.add.sprite(this.scale.width - 200, this.scale.height / 8, 'phoneGuy', 5)
-        this.phoneGuy.body.setSize(this.width, 48)
-        this.phoneGuy.setImmovable(true)
-        this.phoneGuy.body.setOffset(0, this.phoneGuy.height - 48)
-
-        this.matt = this.physics.add.sprite(this.scale.width - 700, this.scale.height / 1.1, 'matt', 3)
-        this.matt.body.setSize(this.width, 48)
-        this.matt.setImmovable(true)
-        this.matt.body.setOffset(0, this.matt.height - 48)
-
-
         // Add player
-        this.player = new Player(this, 705, 550, this.cursors, this.objectLayer)
-          
+        this.player = new Player(this, 500, 550, this.cursors, this.objectLayer)
+
         // Text 
         this.tempBox = this.add.image(this.scale.width / 2, this.scale.height + -100, 'tempBox').setScale(.3)
         this.tempBox.setVisible(false)
@@ -93,9 +51,6 @@ class Play extends Phaser.Scene{
         // Collision
         this.objectLayer.setCollisionByProperty({collides: true})
         this.physics.add.collider(this.player, this.objectLayer)
-        this.physics.add.collider(this.player, this.phoneGuy)
-        this.physics.add.collider(this.player, this.matt)
-
     }
 
     update(){
@@ -103,16 +58,15 @@ class Play extends Phaser.Scene{
         this.player.update()
 
         // Continue
-        if(Phaser.Input.Keyboard.JustDown(this.keySTART) && this.foodTrucks == 1 && this.stage == 1 && this.sweetTea == 1/* && other conditions */){
+        if(Phaser.Input.Keyboard.JustDown(this.keySTART) /* && other conditions */){
             this.scene.start('playTwoScene')
         }
 
-        if(this.foodTrucks == 1 && this.stage == 1 && this.sweetTea == 1/* && other conditions */){
+        if(this.view == 1/* && other conditions */){
             this.leavePrompt.setVisible(true)
             this.leavePrompt.setPosition(this.player.x - 60, this.player.y - 55)
         }
 
-        // Player/Tile interactions
         const tile = this.player.look()
         if(tile && tile.properties.interact){
             this.interactPrompt.setPosition(this.player.x - this.interactPrompt.width / 2, this.player.y - 40)
@@ -134,16 +88,16 @@ class Play extends Phaser.Scene{
             backgroundMusic.stop()
             backgroundMusic.play()
         }
+
     }
 
-    // Interactions switch
     interactions(prompt){
         switch(prompt){
-            case 'Food Truck':
+            case 'View':
                 this.tempBox.setVisible(true)
                 this.dialogue.setVisible(true)
-                this.dialogue.setText('The food trucks always hit the spot.')
-                this.foodTrucks = 1
+                this.dialogue.setText('I\'ll never forget those views.')
+                this.view = 1
                 break
             case 'Stage': 
                 this.tempBox.setVisible(true)

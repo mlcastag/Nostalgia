@@ -11,7 +11,11 @@
     "fileStates": {
         "": {
             "scaleInDock": 0.125,
-            "scaleInEditor": 0.33
+            "scaleInEditor": 0.5
+        },
+        "#tileset": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
         },
         "C:/Tiled Stuff/Concert.tsx": {
             "dynamicWrapping": true,
@@ -32,6 +36,17 @@
             "dynamicWrapping": false,
             "scaleInDock": 0.75,
             "scaleInEditor": 0.125
+        },
+        "C:/Users/mckst/Desktop/Tiled Stuff/bigSur.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 405,
+                "y": 279
+            }
+        },
+        "C:/Users/mckst/Desktop/Tiled Stuff/bigSur.tmx#tileset": {
+            "scaleInDock": 0.5
         },
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx": {
             "scale": 1,
@@ -87,14 +102,14 @@
     "last.imagePath": "C:/Users/mckst/Desktop/CMPM-120/Nostalgia/assets",
     "lastUsedTilesetExportFilter": "JSON tileset files (*.tsj *.json)",
     "map.height": 18,
-    "map.lastUsedExportFilter": "All Files (*)",
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
     "map.lastUsedFormat": "tmx",
     "map.width": 25,
     "openFiles": [
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx"
     ],
     "project": "untitled.tiled-project",
-    "property.type": "string",
+    "property.type": "bool",
     "recentFiles": [
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx",
         "C:/Users/mckst/Desktop/CMPM-120/CP-Slime-World-master-main/assets/overworld.tmx",

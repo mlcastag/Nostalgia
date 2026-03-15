@@ -25,6 +25,8 @@ class Menu extends Phaser.Scene{
         this.load.bitmapFont('highSchool', 'Highschool Nostalgia.png', 'Highschool Nostalgia.xml')
         this.load.image('tiles', 'tileset.png')
         this.load.tilemapTiledJSON('concert', 'concert.json')
+        this.load.tilemapTiledJSON('bigSur', 'bigSur.json')
+        
         this.load.spritesheet('singer', 'singer.png', {
             frameWidth: 32,
             frameHeight: 64
@@ -41,6 +43,14 @@ class Menu extends Phaser.Scene{
             frameWidth: 32,
             frameHeight: 64
         })
+        this.load.spritesheet('phoneGuy', 'phoneGuy.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('matt', 'matt.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
 
         this.load.audio('postcards', 'postcardsFromHell.wav')
 
@@ -52,7 +62,8 @@ class Menu extends Phaser.Scene{
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 3, 'highSchool', 'From: Matt', 64).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 2, 'highSchool', 'Use the arrow keys to move', 32).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.8, 'highSchool', 'Press \'E\' to interact', 32).setOrigin(0.5)
-        this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.5, 'highSchool', 'Press \'SPACE\' to start', 32).setOrigin(0.5)
+        this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.65, 'highSchool', 'Press \'SPACE\' to start', 32).setOrigin(0.5)
+        this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.5, 'highSchool', 'Interact with everything to advance', 32).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.2, 'highSchool', 'Press \'C\' for credits', 32).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 1.1, 'highSchool', 'Press \'R\' to restart to menu', 32).setOrigin(0.5)
 

@@ -5,7 +5,7 @@ class Credits extends Phaser.Scene {
 
     create(){
         // Text
-        this.add.bitmapText(this.scale.width / 2, this.scale.height / 5, 'highSchool', 'Made By: Matt Castaga', 64).setOrigin(0.5)
+        this.add.bitmapText(this.scale.width / 2, this.scale.height / 5, 'highSchool', 'Made By: Matt Castagna', 64).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 3.5, 'highSchool', 'Assets By: LimeZu', 64).setOrigin(0.5)
         this.add.bitmapText(this.scale.width / 2, this.scale.height / 2.8, 'highSchool', 'Music By: The Wood Brothers', 64).setOrigin(0.5)
 
