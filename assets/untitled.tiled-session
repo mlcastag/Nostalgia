@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx",
+    "activeFile": "C:/Users/mckst/Desktop/Tiled Stuff/bigSur.tmx",
     "expandedProjectPaths": [
         "."
     ],
@@ -39,9 +39,9 @@
         },
         "C:/Users/mckst/Desktop/Tiled Stuff/bigSur.tmx": {
             "scale": 1,
-            "selectedLayer": 1,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 405,
+                "x": 371,
                 "y": 279
             }
         },
@@ -106,12 +106,14 @@
     "map.lastUsedFormat": "tmx",
     "map.width": 25,
     "openFiles": [
-        "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx"
+        "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx",
+        "C:/Users/mckst/Desktop/Tiled Stuff/bigSur.tmx"
     ],
     "project": "untitled.tiled-project",
     "property.type": "bool",
     "recentFiles": [
         "C:/Users/mckst/Desktop/Tiled Stuff/concert.tmx",
+        "C:/Users/mckst/Desktop/Tiled Stuff/bigSur.tmx",
         "C:/Users/mckst/Desktop/CMPM-120/CP-Slime-World-master-main/assets/overworld.tmx",
         "C:/Users/mckst/Desktop/Tiled Stuff/Concert.tsx",
         "concert.tmx",

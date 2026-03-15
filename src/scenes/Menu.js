@@ -51,6 +51,38 @@ class Menu extends Phaser.Scene{
             frameWidth: 32,
             frameHeight: 64
         })
+        this.load.spritesheet('randomOne', 'randomOne.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomTwo', 'randomTwo.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomThree', 'randomThree.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomFour', 'randomFour.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomFive', 'randomFive.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomSix', 'randomSix.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomSeven', 'randomSeven.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
+        this.load.spritesheet('randomEight', 'randomEight.png', {
+            frameWidth: 32,
+            frameHeight: 64
+        })
 
         this.load.audio('postcards', 'postcardsFromHell.wav')
 

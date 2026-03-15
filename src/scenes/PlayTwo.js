@@ -4,7 +4,9 @@ class PlayTwo extends Phaser.Scene{
     }
 
     init(){
-
+        this.mattTalk = 0
+        this.view = 0
+        this.rv = 0
     }
 
     create(){
@@ -12,6 +14,7 @@ class PlayTwo extends Phaser.Scene{
         // Add map
         const map = this.add.tilemap('bigSur')
         const tileset = map.addTilesetImage('tileset', 'tiles')
+        const belowFloor = map.createLayer('belowFloor', tileset, 0, 0)
         const floorLayer = map.createLayer('floorLayer', tileset, 0, 0)
         this.objectLayer = map.createLayer('objectLayer', tileset, 0, 0)
 
@@ -21,8 +24,22 @@ class PlayTwo extends Phaser.Scene{
         this.keySTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
         this.keyRESTART = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R)
 
+        // Add NPC
+        this.matt = this.physics.add.sprite(this.scale.width - 750, this.scale.height / 3, 'matt', 3)
+        this.matt.body.setSize(this.width, 48)
+        this.matt.setImmovable(true)
+        this.matt.body.setOffset(0, this.matt.height - 48)
+        
+        this.mattZone = this.add.zone(this.matt.x, this.matt.y + 5, this.matt.width + 10, this.matt.height - 1)
+        this.physics.world.enable(this.mattZone)
+        this.mattZone.body.setImmovable(true)
+        this.mattZone.setDataEnabled()
+        this.mattZone.data.set('interact', 'Matt')
+
         // Add player
         this.player = new Player(this, 500, 550, this.cursors, this.objectLayer)
+
+
 
         // Text 
         this.tempBox = this.add.image(this.scale.width / 2, this.scale.height + -100, 'tempBox').setScale(.3)
@@ -51,6 +68,7 @@ class PlayTwo extends Phaser.Scene{
         // Collision
         this.objectLayer.setCollisionByProperty({collides: true})
         this.physics.add.collider(this.player, this.objectLayer)
+        this.physics.add.collider(this.player, this.matt)
     }
 
     update(){
@@ -58,22 +76,28 @@ class PlayTwo extends Phaser.Scene{
         this.player.update()
 
         // Continue
-        if(Phaser.Input.Keyboard.JustDown(this.keySTART) /* && other conditions */){
-            this.scene.start('playTwoScene')
+        if(Phaser.Input.Keyboard.JustDown(this.keySTART) && this.view == 1 && this.mattTalk == 1 && this.rv == 1/* && other conditions */){
+            this.scene.start('letterScene')
         }
 
-        if(this.view == 1/* && other conditions */){
+        if(this.view == 1 && this.mattTalk == 1 && this.rv == 1/* && other conditions */){
             this.leavePrompt.setVisible(true)
             this.leavePrompt.setPosition(this.player.x - 60, this.player.y - 55)
         }
 
+        // Player/Tile interactions
         const tile = this.player.look()
-        if(tile && tile.properties.interact){
+        const inDaZone = this.physics.overlap(this.player, this.mattZone)
+        if(tile && tile.properties.interact || inDaZone){
             this.interactPrompt.setPosition(this.player.x - this.interactPrompt.width / 2, this.player.y - 40)
             this.interactPrompt.setVisible(true)
 
-            if(Phaser.Input.Keyboard.JustDown(this.keyINTERACT)){
+            if(tile && tile.properties.interact && Phaser.Input.Keyboard.JustDown(this.keyINTERACT)){
                 this.interactions(tile.properties.interact)
+            }
+
+            if(inDaZone && Phaser.Input.Keyboard.JustDown(this.keyINTERACT)){
+                this.interactions(this.mattZone.data.get('interact'))
             }
 
         }else{
@@ -99,17 +123,17 @@ class PlayTwo extends Phaser.Scene{
                 this.dialogue.setText('I\'ll never forget those views.')
                 this.view = 1
                 break
-            case 'Stage': 
+            case 'Matt': 
                 this.tempBox.setVisible(true)
                 this.dialogue.setVisible(true)
-                this.dialogue.setText('We saw so many great shows.')
-                this.stage = 1
+                this.dialogue.setText('It\'s nutty out here.')
+                this.mattTalk = 1
                 break
-            case 'Sweet Tea': 
+            case 'RV': 
                 this.tempBox.setVisible(true)
                 this.dialogue.setVisible(true)
-                this.dialogue.setText('I still miss those sweet tea lemonades.')
-                this.sweetTea = 1
+                this.dialogue.setText('We\'ve been on so many great trips.')
+                this.rv = 1
                 break
         }
     }
